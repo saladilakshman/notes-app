@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply dark:bg-zinc-800 dark:text-neutral-50 font-poppin transition-colors;
+}
+
+.back-to-home {
+  @apply px-2 py-2 rounded-md font-poppin flex justify-between gap-2 items-center bg-gray-200 hover:bg-gray-300 transition-colors dark:text-zinc-800;
+}
+.share-button {
+  @apply px-2 py-2 rounded-md font-poppin flex justify-between gap-2 items-center bg-gray-200 hover:bg-gray-300 transition-colors md:mr-2 mr-4 disabled:cursor-not-allowed disabled:bg-stone-300 dark:text-zinc-800;
+}
+.share-buttons {
+  @apply bg-white text-stone-700 border-2 border-gray-100 flex flex-col justify-center items-baseline rounded-md  absolute text-base min-w-fit text-nowrap gap-2 right-1 top-10 py-2 shadow-xl  transition-opacity;
+}
+.save-button {
+  @apply py-1 px-4 md:py-2 bg-fuchsia-500 rounded-md text-white hover:bg-fuchsia-600 active:bg-fuchsia-700 transition-colors disabled:cursor-not-allowed disabled:bg-stone-300 dark:text-zinc-800;
+}
+.title-input {
+  @apply w-full outline-none  border-b-2 border-b-gray-200 placeholder:text-xl dark:bg-zinc-800 dark:text-white dark:caret-white;
+}
+.description-input {
+  @apply w-full outline-none  placeholder:text-xl appearance-none resize-none  mt-10 dark:bg-zinc-800 dark:text-white dark:caret-white overflow-hidden;
+}
+.addnote-button {
+  @apply px-3 py-1 rounded-md text-white bg-fuchsia-500 text-base hover:bg-fuchsia-600 active:bg-fuchsia-700 transition-colors;
+}
+.search-input {
+  @apply w-full mt-3 rounded-md h-10  pl-3 focus:outline-none placeholder:capitalize shadow-lg bg-white ring-1 ring-gray-300 dark:text-zinc-700;
+}
+.note-card {
+  @apply border border-gray-200 rounded-md p-2 shadow-lg cursor-default hover:shadow-xl transition-shadow text-zinc-950 dark:hover:shadow-xl;
+}
